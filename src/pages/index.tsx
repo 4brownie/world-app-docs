@@ -15,7 +15,7 @@ function HomepageHeader() {
 			{/* Banner Image */}
 			<div className={styles.bannerContainer}>
 				<img
-					src='/static/image/banner-1.png'
+					src='/static/image/image.jpg'
 					alt='World Plan and Milestone Banner'
 					className={styles.bannerImage}
 				/>

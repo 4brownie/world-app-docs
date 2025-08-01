@@ -25,7 +25,7 @@ module.exports = {
 			title: 'World Plan and Milestone',
 			logo: {
 				alt: 'World Logo',
-				src: 'img/logo.png',
+				src: '/static/image/logo.png',
 			},
 			items: [
 				{
