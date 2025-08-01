@@ -1,25 +1,62 @@
-```markdownid: installation
+---
+id: installation
 title: Installation Guide
-sidebar_label: InstallationInstalling World Plan and MilestonePrerequisitesNode.js (v16.14+)
-Git
-A code editor (e.g., VS Code)
+sidebar_label: Installation
+---
 
-StepsClone the repository:bash
+# Installation Guide
 
-git clone https://github.com/your-username/world-app.git
+This guide walks you through installing the **World Plan and Milestone** application on your local machine or server.
 
-Navigate to the project folder:bash
+## Prerequisites
 
-cd world-app
+Before installation, ensure you have the following:
 
-Install dependencies:bash
+- **Node.js**: Version 16.14 or higher (LTS recommended). [Download here](https://nodejs.org/).
+- **Git**: For cloning the repository. [Download here](https://git-scm.com/).
+- **Code Editor**: Recommended: Visual Studio Code or similar.
+- **Internet Connection**: Required for initial setup and dependencies.
 
-npm install
+## Installation Steps
 
-Start the application:bash
+1. **Clone the Repository**:
+   Open your terminal and run:
+   ```bash
+   git clone https://github.com/your-username/world-app.git
+   cd world-app
+   ```
 
-npm run start
+- **Install Dependencies:**
 
-Refer to the Quick Start (#quick-start) for usage instructions.
+  Install the required Node.js packages:bash
 
-```
+  ```
+  npm install
+  ```
+
+- **Set Up Environment Variables:**
+
+  - Create a `.env` file in the root directory.
+  - Add necessary configurations (e.g., API keys, database URLs). Example:
+
+  ```
+  PORT=3000
+  DATABASE_URL=your_database_url
+  ```
+
+  - Refer to the project README for specific environment variables.
+
+- **Start the Application:**
+
+  Launch the app in development mode:bash
+
+  ```
+  npm run start
+  ```
+
+  - The application should be accessible at http://localhost:3000.
+
+## Troubleshooting
+
+- Node.js Version Issue: Run `node -v` to check your version and update if needed.
+- Dependency Errors: Delete `node_modules` and `package-lock.json`, then rerun npm install.

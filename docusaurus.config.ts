@@ -1,10 +1,11 @@
 module.exports = {
-	title: 'World Plan and Milestone Documentation',
-	tagline: 'Guide to managing global projects and milestones',
+	title: 'World Symposium Docs',
+	tagline: 'Guide to managing the World Symposium project',
 	url: 'https://your-username.github.io',
 	baseUrl: '/world-app-docs/',
 	organizationName: 'your-username',
 	projectName: 'world-app-docs',
+	favicon: '/img/favicon.ico',
 	presets: [
 		[
 			'@docusaurus/preset-classic',
@@ -26,6 +27,64 @@ module.exports = {
 				alt: 'World Logo',
 				src: 'img/logo.png',
 			},
+			items: [
+				{
+					type: 'doc',
+					docId: 'intro',
+					position: 'left',
+					label: 'Home',
+				},
+				{
+					type: 'dropdown',
+					label: 'Getting Started',
+					position: 'left',
+					items: [
+						{
+							type: 'doc',
+							docId: 'getting-started/installation',
+							label: 'Installation',
+						},
+						{
+							type: 'doc',
+							docId: 'getting-started/quick-start',
+							label: 'Quick Start',
+						},
+					],
+				},
+				{
+					type: 'dropdown',
+					label: 'Plan and Milestones',
+					position: 'left',
+					items: [
+						{
+							type: 'doc',
+							docId: 'plan-milestones/overview',
+							label: 'Overview',
+						},
+						{
+							type: 'doc',
+							docId: 'plan-milestones/creating-plans',
+							label: 'Creating Plans',
+						},
+						{
+							type: 'doc',
+							docId: 'plan-milestones/managing-milestones',
+							label: 'Managing Milestones',
+						},
+						{
+							type: 'doc',
+							docId: 'plan-milestones/collaboration',
+							label: 'Collaboration',
+						},
+					],
+				},
+				{
+					type: 'doc',
+					docId: 'faq',
+					position: 'left',
+					label: 'FAQ',
+				},
+			],
 		},
 	},
 };
