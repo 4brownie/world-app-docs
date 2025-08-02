@@ -21,6 +21,11 @@ module.exports = {
 			],
 		},
 		{
+			type: 'category',
+			label: 'Front End Development',
+			items: ['front-end-dev/architecture'],
+		},
+		{
 			type: 'doc',
 			id: 'faq',
 			label: 'FAQ',

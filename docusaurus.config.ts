@@ -23,10 +23,10 @@ module.exports = {
 	themeConfig: {
 		navbar: {
 			title: 'World Plan and Milestone',
-			logo: {
-				alt: 'World Logo',
-				src: '/static/image/logo.png',
-			},
+			// logo: {
+			// 	alt: 'World Logo',
+			// 	src: '/static/image/logo.png',
+			// },
 			items: [
 				{
 					type: 'doc',
@@ -48,6 +48,18 @@ module.exports = {
 							type: 'doc',
 							docId: 'getting-started/quick-start',
 							label: 'Quick Start',
+						},
+					],
+				},
+				{
+					type: 'dropdown',
+					label: 'Development',
+					position: 'left',
+					items: [
+						{
+							type: 'doc',
+							docId: 'front-end-dev/architecture',
+							label: 'Architecture',
 						},
 					],
 				},
